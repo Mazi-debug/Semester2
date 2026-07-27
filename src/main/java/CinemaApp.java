@@ -23,6 +23,19 @@ public class CinemaApp
 {
     public static void main(String[] args) 
     {
+        //create an object from the cinema class
+        //ClassName objectName = new ClassName();
+        Cinema cinema = new Cinema();
+        
+        //receive the 2D array from a method
+        char[][] seatingPlan = cinema.creatingSeatingPlan();
+        
+        //pass the 2D array to the methods
+        cinema.displaySeatingPlan(seatingPlan);
+        
+        int bookedSeats = cinema.countBookedSeats(seatingPlan);
+        
+        System.out.println("\nBooked Seats: " + bookedSeats);
         
     }
 }
